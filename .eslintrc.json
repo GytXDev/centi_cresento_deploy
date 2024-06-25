@@ -9,12 +9,7 @@
           "varsIgnorePattern": "^_"
         }
       ],
-      "react/display-name": [
-        "error",
-        {
-          "ignoreTranspilerName": false
-        }
-      ]
+      "react/display-name": 0
     }
   }
   
