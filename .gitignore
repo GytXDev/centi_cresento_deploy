@@ -8,3 +8,4 @@ node_modules/
 # Environment variables
 .env
 build/
+out_build/
