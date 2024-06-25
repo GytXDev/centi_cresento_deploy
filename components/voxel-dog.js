@@ -1,7 +1,5 @@
 import { useState, useEffect, useRef, useCallback } from 'react'
 import * as THREE from 'three'
-// Supprimez les importations suivantes car elles ne sont pas utilisées
-// import { Box, Spinner } from '@chakra-ui/react'
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls'
 import { loadGLTFModel } from '../lib/model'
 import { DogSpinner, DogContainer } from './voxel-dog-loader'
