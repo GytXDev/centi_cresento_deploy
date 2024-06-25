@@ -9,7 +9,7 @@ import tutorial_deposit from '../public/images/video/tutorial_deposit.mp4'
 import tutorial_withdraw from '../public/images/video/tutorial_withdraw.mp4'
 
 const Works = () => (
-    <Layout title="Works">
+    <Layout title="UI">
         <Container>
             <Heading as="h3" fontSize={20} mb={4}>
                 UI/Assistant
