@@ -1,0 +1,9 @@
+# Node.js dependencies
+node_modules/
+
+# Next.js specific
+.next/
+.vercel/
+
+# Environment variables
+.env
