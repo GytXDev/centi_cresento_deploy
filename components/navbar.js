@@ -106,7 +106,7 @@ function Navbar(props) {
                   UI/Assistant
                 </MenuItem>
                 <MenuItem as={MenuLink} href="/bets">
-                  Activité des Paris
+                  Activité de Tombola
                 </MenuItem>
               </MenuList>
             </Menu>

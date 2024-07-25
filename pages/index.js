@@ -72,7 +72,7 @@ const Page = () => {
         <Layout>
             <Container>
                 <Box borderRadius="lg" bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')} p={3} mb={6} align="center">
-                    Bonjour et bienvenue chez Centi Cresento ! Commencez à gagner de l&apos;argent dès maintenant 💸
+                    Bonjour et bienvenue chez Centi Cresento ! Participez à nos tombola et gagner de l&apos;argent dès maintenant 💸
                 </Box>
 
 
