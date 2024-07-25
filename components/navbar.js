@@ -83,7 +83,7 @@ function Navbar(props) {
             UI/Assistant
           </LinkItem>
           <LinkItem href="/bets" path={path}>
-            Activité des Paris
+            Activité de Tombola
           </LinkItem>
         </Stack>
 

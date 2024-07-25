@@ -45,7 +45,7 @@ const Bets = () => {
         <Layout title="Bets">
             <Container>
                 <Heading as="h3" fontSize={20} mb={4}>
-                    Activité des Paris
+                    Activité de Tombola
                 </Heading>
                 <SimpleGrid columns={[1, 1, 2]} gap={6}>
                     {bets.map(bet => (
