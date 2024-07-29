@@ -132,7 +132,7 @@ const Page = () => {
                             href=""
                             passHref
                         >
-                            {200 + downloadCount}
+                            {700 + downloadCount}
                         </Link>{" "}
                         téléchargements!
                     </Paragraph>
