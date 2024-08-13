@@ -74,16 +74,12 @@ const Page = () => {
                 <Box borderRadius="lg" bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')} p={3} mb={6} align="center">
                     Bonjour et bienvenue chez Centi Crescendo ! Participez à nos tombola et gagner de l&apos;argent dès maintenant 💸
                 </Box>
-
-
                 <Box display={{ md: 'flex' }}>
                     <Box flexGrow={1}>
-                        <Heading as="h2" variant="page-title">
-                            Centi Crescendo
-                        </Heading>
-                        Entrez dans le monde du jeu et de l&apos;excitation avec Centi Crescendo ! Laissez-vous emporter par l&apos;adrénaline des tombolas et découvrez la joie de gagner. Participez maintenant et vivez l&apos;expérience palpitante d&apos;une victoire en un clic !
+                        <Paragraph>
+                            Entrez dans le monde du jeu et de l&apos;excitation avec Centi Crescendo ! Laissez-vous emporter par l&apos;adrénaline des tombolas et découvrez la joie de gagner. Participez maintenant et vivez l&apos;expérience palpitante d&apos;une victoire en un clic !
+                        </Paragraph>
                     </Box>
-
                     <Box
                         flexShrink={0}
                         mt={{ base: 4, md: 0 }}
@@ -142,26 +138,17 @@ const Page = () => {
                         <Icon as={FaAndroid} boxSize={8} color="green.500" />
                     </Flex>
                     <Paragraph>
-                        Téléchargez notre application
-                        <Link as={NextLink} href="" passHref scroll={false}>
-                        </Link>
-                        . Acceptez les applications de {" "}
-                        <Link
-                            as={NextLink}
-                            href=""
-                            passHref
-                        >
+                        Téléchargez notre application Android en un clic ! Acceptez les applications de{" "}
+                        <Link as={NextLink} href="" passHref>
                             sources inconnues
-                        </Link>{" "} dans les paramètres de votre appareil. Déjà{" "}
-                        <Link
-                            as={NextLink}
-                            href=""
-                            passHref
-                        >
+                        </Link>{" "}
+                        dans les paramètres de votre appareil pour commencer. Déjà{" "}
+                        <Link as={NextLink} href="" passHref>
                             {700 + downloadCount}
                         </Link>{" "}
-                        téléchargements!
+                        téléchargements et ça ne fait que commencer !
                     </Paragraph>
+
                     <Box align="center" my={4}>
                         <Button
                             as="a"
