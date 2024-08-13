@@ -72,9 +72,10 @@ const Page = () => {
         <Layout>
             <Container>
                 <Box borderRadius="lg" bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')} p={3} mb={6} align="center">
-                    Bonjour et bienvenue chez Centi Crescendo ! Participez à nos tombola et gagner de l&apos;argent dès maintenant 💸
+                    Bienvenue chez Centi Crescendo ! 🎉 Rejoignez nos tombolas dès maintenant pour une chance de gagner de l&apos;argent et bien plus encore 💸
                 </Box>
-                <Box display={{ md: 'flex' }}>
+
+                <Box display={{ md: 'flex' }} mb={4}>
                     <Box flexGrow={1}>
                         <Paragraph>
                             Entrez dans le monde du jeu et de l&apos;excitation avec Centi Crescendo ! Laissez-vous emporter par l&apos;adrénaline des tombolas et découvrez la joie de gagner. Participez maintenant et vivez l&apos;expérience palpitante d&apos;une victoire en un clic !
