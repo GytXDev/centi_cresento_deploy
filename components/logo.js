@@ -32,7 +32,7 @@ const Logo = () => {
           fontWeight="bold"
           ml={3}
         >
-          Centi Cresento{' '}
+          Centi Cresendo{' '}
           <Box as="span" fontWeight="normal" fontSize="sm">
             v4.0.1
           </Box>

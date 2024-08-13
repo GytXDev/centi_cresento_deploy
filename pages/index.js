@@ -18,7 +18,7 @@ import Image from 'next/image';
 import Layout from '../components/layouts/article';
 import Section from '../components/section';
 import Paragraph from '../components/paragraph';
-import { FaAndroid, FaApple, FaTelegramPlane } from 'react-icons/fa';
+import { FaAndroid, FaApple, FaTelegramPlane, FaGlobe } from 'react-icons/fa';
 import { IoLogoWhatsapp } from 'react-icons/io';
 import Footer from '../components/footer';
 import { useEffect, useState } from 'react';
@@ -72,14 +72,14 @@ const Page = () => {
         <Layout>
             <Container>
                 <Box borderRadius="lg" bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')} p={3} mb={6} align="center">
-                    Bonjour et bienvenue chez Centi Cresento ! Participez à nos tombola et gagner de l&apos;argent dès maintenant 💸
+                    Bonjour et bienvenue chez Centi Cresendo ! Participez à nos tombola et gagner de l&apos;argent dès maintenant 💸
                 </Box>
 
 
                 <Box display={{ md: 'flex' }}>
                     <Box flexGrow={1}>
                         <Heading as="h2" variant="page-title">
-                            Centi Cresento
+                            Centi Cresendo
                         </Heading>
                         Si vous pouviez revenir à l&apos;époque où le Bitcoin valait 1$, saisiriez-vous votre chance ? Alors, saisissez cette chance maintenant !
                     </Box>
@@ -108,6 +108,31 @@ const Page = () => {
                         </Box>
                     </Box>
                 </Box>
+                {/* Section pour rediriger vers la page de jeu */}
+                <Section delay={0.2}>
+                    <Flex align="center" mb={4}>
+                        <Heading as="h3" variant="section-title" mr={4}>
+                            Jouez en Ligne
+                        </Heading>
+                        <Icon as={FaGlobe} boxSize={8} color="teal.500" />
+                    </Flex>
+                    <Paragraph>
+                        Participez à nos tombolas simplement et rapidement en ligne. Rejoignez Centi Cresendo et gagnez des prix en quelques clics !
+                    </Paragraph>
+                    <Box align="center" my={4}>
+                        <Button
+                            as="a"
+                            href="https://centi-crensento.firebaseapp.com"
+                            scroll={false}
+                            rightIcon={<ChevronRightIcon />}
+                            colorScheme="teal"
+                        >
+                            Jouer Maintenant
+                        </Button>
+                    </Box>
+                </Section>
+
+
                 <Section delay={0.1}>
                     <Flex align="center">
                         <Heading as="h3" variant="section-title" mr={4}>
@@ -190,14 +215,14 @@ const Page = () => {
                         <ListItem>
                             <Link href='https://whatsapp.com/channel/0029VaeaFzC4IBhA5iSCOH3m' target='_blank'>
                                 <Button variant="ghost" colorScheme='teal' leftIcon={<Icon as={IoLogoWhatsapp} />}>
-                                    @whatsapp_centi_cresento
+                                    @whatsapp_centi_cresendo
                                 </Button>
                             </Link>
                         </ListItem>
                         <ListItem>
                             <Link href='https://t.me/+3BYN_0tdtCAxODRk' target='_blank'>
                                 <Button variant="ghost" colorScheme='teal' leftIcon={<Icon as={FaTelegramPlane} />}>
-                                    @telegram_centi_cresento
+                                    @telegram_centi_cresendo
                                 </Button>
                             </Link>
                         </ListItem>
