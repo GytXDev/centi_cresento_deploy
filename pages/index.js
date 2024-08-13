@@ -122,7 +122,7 @@ const Page = () => {
                     <Box align="center" my={4}>
                         <Button
                             as="a"
-                            href="https://centi-crensento.firebaseapp.com"
+                            href="https://centi-crensento.web.app/"
                             scroll={false}
                             rightIcon={<ChevronRightIcon />}
                             colorScheme="teal"
