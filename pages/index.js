@@ -72,14 +72,14 @@ const Page = () => {
         <Layout>
             <Container>
                 <Box borderRadius="lg" bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')} p={3} mb={6} align="center">
-                    Bonjour et bienvenue chez Centi Cresendo ! Participez à nos tombola et gagner de l&apos;argent dès maintenant 💸
+                    Bonjour et bienvenue chez Centi Crescendo ! Participez à nos tombola et gagner de l&apos;argent dès maintenant 💸
                 </Box>
 
 
                 <Box display={{ md: 'flex' }}>
                     <Box flexGrow={1}>
                         <Heading as="h2" variant="page-title">
-                            Centi Cresendo
+                            Centi Crescendo
                         </Heading>
                         Si vous pouviez revenir à l&apos;époque où le Bitcoin valait 1$, saisiriez-vous votre chance ? Alors, saisissez cette chance maintenant !
                     </Box>
@@ -117,7 +117,7 @@ const Page = () => {
                         <Icon as={FaGlobe} boxSize={8} color="teal.500" />
                     </Flex>
                     <Paragraph>
-                        Participez à nos tombolas simplement et rapidement en ligne. Rejoignez Centi Cresendo et gagnez des prix en quelques clics !
+                        Participez à nos tombolas simplement et rapidement en ligne. Rejoignez Centi Crescendo et gagnez des prix en quelques clics !
                     </Paragraph>
                     <Box align="center" my={4}>
                         <Button
@@ -215,14 +215,14 @@ const Page = () => {
                         <ListItem>
                             <Link href='https://whatsapp.com/channel/0029VaeaFzC4IBhA5iSCOH3m' target='_blank'>
                                 <Button variant="ghost" colorScheme='teal' leftIcon={<Icon as={IoLogoWhatsapp} />}>
-                                    @whatsapp_centi_cresendo
+                                    @whatsapp_centi_crescendo
                                 </Button>
                             </Link>
                         </ListItem>
                         <ListItem>
                             <Link href='https://t.me/+3BYN_0tdtCAxODRk' target='_blank'>
                                 <Button variant="ghost" colorScheme='teal' leftIcon={<Icon as={FaTelegramPlane} />}>
-                                    @telegram_centi_cresendo
+                                    @telegram_centi_crescendo
                                 </Button>
                             </Link>
                         </ListItem>
