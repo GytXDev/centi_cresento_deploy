@@ -81,8 +81,9 @@ const Page = () => {
                         <Heading as="h2" variant="page-title">
                             Centi Crescendo
                         </Heading>
-                        Si vous pouviez revenir à l&apos;époque où le Bitcoin valait 1$, saisiriez-vous votre chance ? Alors, saisissez cette chance maintenant !
+                        Entrez dans le monde du jeu et de l'excitation avec Centi Crescendo ! Laissez-vous emporter par l'adrénaline des tombolas et découvrez la joie de gagner. Participez maintenant et vivez l'expérience palpitante d'une victoire en un clic !
                     </Box>
+
                     <Box
                         flexShrink={0}
                         mt={{ base: 4, md: 0 }}
