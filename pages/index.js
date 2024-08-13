@@ -81,7 +81,7 @@ const Page = () => {
                         <Heading as="h2" variant="page-title">
                             Centi Crescendo
                         </Heading>
-                        Entrez dans le monde du jeu et de l&apos;excitation avec Centi Crescendo ! Laissez-vous emporter par l&apos;adrénaline des tombolas et découvrez la joie de gagner. Participez maintenant et vivez l&apos;expérience palpitante d'une victoire en un clic !
+                        Entrez dans le monde du jeu et de l&apos;excitation avec Centi Crescendo ! Laissez-vous emporter par l&apos;adrénaline des tombolas et découvrez la joie de gagner. Participez maintenant et vivez l&apos;expérience palpitante d&apos;une victoire en un clic !
                     </Box>
 
                     <Box
