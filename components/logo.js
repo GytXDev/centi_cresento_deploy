@@ -29,6 +29,7 @@ const Badge = styled(Box)`
   padding: 2px 8px;
   font-size: 0.75rem;
   margin-left: 5px;
+   font-weight: normal;
 `
 
 const Logo = () => {
