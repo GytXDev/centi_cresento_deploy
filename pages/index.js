@@ -153,7 +153,7 @@ const Page = () => {
                     <Box align="center" my={4}>
                         <Button
                             as="a"
-                            href="/android/Centi Cresento.apk"
+                            href="/android/Centi Crescendo.apk"
                             scroll={false}
                             rightIcon={<ChevronRightIcon />}
                             colorScheme="teal"
