@@ -21,6 +21,16 @@ const LogoBox = styled.span`
   }
 `
 
+const Badge = styled(Box)`
+  display: inline-block;
+  background-color: rgba(0, 0, 0, 0.1); 
+  color: #333;
+  border-radius: 12px;
+  padding: 2px 8px;
+  font-size: 0.75rem;
+  margin-left: 5px;
+`
+
 const Logo = () => {
   return (
     <Link href="/" scroll={false}>
@@ -32,10 +42,10 @@ const Logo = () => {
           fontWeight="bold"
           ml={3}
         >
-          Centi Crescendo{' '}
-          <Box as="span" fontWeight="normal" fontSize="sm">
-            v4.0.1
-          </Box>
+          Centi Crescendo
+          <Badge>
+            v4.1.2
+          </Badge>
         </Text>
       </LogoBox>
     </Link>
