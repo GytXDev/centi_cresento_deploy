@@ -23,8 +23,8 @@ const LogoBox = styled.span`
 
 const Badge = styled(Box)`
   display: inline-block;
-  background-color: rgba(0, 0, 0, 0.1); 
-  color: #333;
+  background-color: ${props => props.bgColor}; // Use background color from props
+  color: ${props => props.color}; // Use text color from props
   border-radius: 12px;
   padding: 2px 8px;
   font-size: 0.75rem;
@@ -32,6 +32,9 @@ const Badge = styled(Box)`
 `
 
 const Logo = () => {
+  const badgeBgColor = useColorModeValue('rgba(0, 0, 0, 0.1)', 'rgba(255, 255, 255, 0.2)');
+  const badgeColor = useColorModeValue('black', 'white');
+
   return (
     <Link href="/" scroll={false}>
       <LogoBox>
@@ -43,7 +46,7 @@ const Logo = () => {
           ml={3}
         >
           Centi Crescendo
-          <Badge>
+          <Badge bgColor={badgeBgColor} color={badgeColor}>
             v4.1.2
           </Badge>
         </Text>
