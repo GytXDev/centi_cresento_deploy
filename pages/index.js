@@ -115,7 +115,7 @@ const Page = () => {
                         <Icon as={FaGlobe} boxSize={8} color="teal.500" />
                     </Flex>
                     <Paragraph>
-                        Participez à nos tombolas simplement et rapidement en ligne. Rejoignez Centi Crescendo et gagnez des prix en quelques clics !
+                        Participez à nos tombolas simplement et rapidement en ligne depuis votre Android, iPhone, PC ou Mac. Rejoignez Centi Crescendo et gagnez des prix en quelques clics !
                     </Paragraph>
                     <Box align="center" my={4}>
                         <Button
