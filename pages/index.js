@@ -72,7 +72,7 @@ const Page = () => {
         <Layout>
             <Container>
                 <Box borderRadius="lg" bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')} p={3} mb={6} align="center">
-                    Bienvenue chez Centi Crescendo ! 🎉 Rejoignez nos tombolas dès maintenant pour une chance de gagner de l&apos;argent et bien plus encore 💸
+                    Gagner de l&apos;argent et bien plus encore 💸
                 </Box>
 
                 <Box display={{ md: 'flex' }} mb={4}>
