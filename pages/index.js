@@ -132,7 +132,7 @@ const Page = () => {
                 </Section>
 
 
-                <Section delay={0.1}>
+                {/* <Section delay={0.1}>
                     <Flex align="center">
                         <Heading as="h3" variant="section-title" mr={4}>
                             Android
@@ -164,8 +164,8 @@ const Page = () => {
                             Télécharger
                         </Button>
                     </Box>
-                </Section>
-                <Section delay={0.2}>
+                </Section> */}
+                {/* <Section delay={0.2}>
                     <Flex align="center" mb={4}>
                         <Heading as="h3" variant="section-title" mr={4}>
                             IOS
@@ -182,7 +182,7 @@ const Page = () => {
                             développement.
                         </Link>{" "} Notre équipe technique travaille activement à sa sortie.
                     </Paragraph>
-                </Section>
+                </Section> */}
 
                 <Section delay={0.2}>
                     <Heading as="h3" variant="section-title" mr={4}>
