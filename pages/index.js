@@ -71,15 +71,16 @@ const Page = () => {
     return (
         <Layout>
             <Container>
-                <Box borderRadius="lg" bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')} p={3} mb={6} align="center">
+                <Box borderRadius="lg" bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')} p={3} mb={6} mt={8} align="center">
                     Gagner de l&apos;argent et bien plus encore 💸
                 </Box>
 
                 <Box display={{ md: 'flex' }} mb={4}>
                     <Box flexGrow={1}>
                         <Paragraph>
-                            Entrez dans le monde du jeu et de l&apos;excitation avec Centi Crescendo ! Laissez-vous emporter par l&apos;adrénaline des tombolas et découvrez la joie de gagner. Participez maintenant et vivez l&apos;expérience palpitante d&apos;une victoire en un clic !
+                            Plongez dans l&apos;univers captivant de Centi Crescendo ! Ressentez l&apos;adrénaline des tombolas et découvrez la joie de gagner. Participez maintenant pour vivre une victoire en un clic !
                         </Paragraph>
+
                     </Box>
                     <Box
                         flexShrink={0}
