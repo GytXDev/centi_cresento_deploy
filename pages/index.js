@@ -18,7 +18,7 @@ import Image from 'next/image';
 import Layout from '../components/layouts/article';
 import Section from '../components/section';
 import Paragraph from '../components/paragraph';
-import { FaTelegramPlane, FaGlobe } from 'react-icons/fa';
+import {FaAndroid, FaTelegramPlane, FaGlobe } from 'react-icons/fa';
 import { IoLogoWhatsapp } from 'react-icons/io';
 import Footer from '../components/footer';
 import { useEffect, useState } from 'react';
@@ -27,7 +27,7 @@ import { db } from '../lib/firebaseConfig';
 import winner_page from '../public/images/winner_page.png'
 
 const Page = () => {
-    // const [downloadCount, setDownloadCount] = useState(0);
+    const [downloadCount, setDownloadCount] = useState(0);
     const [_loading, setLoading] = useState(true);
 
 
@@ -50,23 +50,24 @@ const Page = () => {
         fetchDownloadCount();
     }, []);
 
-    // const handleDownload = async () => {
-    //     try {
-    //         await fetch('/api/incrementDownload', {
-    //             method: 'POST'
-    //         });
 
-    //         // Rafraîchir le compteur après l'incrémentation réussie
-    //         const downloadDoc = await getDoc(doc(db, 'downloads', 'pAd9UmdalQuAcEeuXQm4'));
-    //         if (downloadDoc.exists()) {
-    //             setDownloadCount(downloadDoc.data().downloadCount);
-    //         } else {
-    //             console.log('Document does not exist');
-    //         }
-    //     } catch (error) {
-    //         console.error('Error incrementing or fetching download count: ', error);
-    //     }
-    // };
+    const handleDownload = async () => {
+        try {
+            await fetch('/api/incrementDownload', {
+                method: 'POST'
+            });
+
+            // Rafraîchir le compteur après l'incrémentation réussie
+            const downloadDoc = await getDoc(doc(db, 'downloads', 'pAd9UmdalQuAcEeuXQm4'));
+            if (downloadDoc.exists()) {
+                setDownloadCount(downloadDoc.data().downloadCount);
+            } else {
+                console.log('Document does not exist');
+            }
+        } catch (error) {
+            console.error('Error incrementing or fetching download count: ', error);
+        }
+    };
 
     return (
         <Layout>
@@ -132,7 +133,7 @@ const Page = () => {
                 </Section>
 
 
-                {/* <Section delay={0.1}>
+                <Section delay={0.1}>
                     <Flex align="center">
                         <Heading as="h3" variant="section-title" mr={4}>
                             Android
@@ -164,7 +165,7 @@ const Page = () => {
                             Télécharger
                         </Button>
                     </Box>
-                </Section> */}
+                </Section>
                 {/* <Section delay={0.2}>
                     <Flex align="center" mb={4}>
                         <Heading as="h3" variant="section-title" mr={4}>
