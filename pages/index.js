@@ -18,56 +18,12 @@ import Image from 'next/image';
 import Layout from '../components/layouts/article';
 import Section from '../components/section';
 import Paragraph from '../components/paragraph';
-import {FaAndroid, FaTelegramPlane, FaGlobe } from 'react-icons/fa';
+import {FaTelegramPlane, FaGlobe } from 'react-icons/fa';
 import { IoLogoWhatsapp } from 'react-icons/io';
 import Footer from '../components/footer';
-import { useEffect, useState } from 'react';
-import { getDoc, doc } from 'firebase/firestore';
-import { db } from '../lib/firebaseConfig';
 import winner_page from '../public/images/winner_page.png'
 
 const Page = () => {
-    const [downloadCount, setDownloadCount] = useState(0);
-    const [_loading, setLoading] = useState(true);
-
-
-    useEffect(() => {
-        const fetchDownloadCount = async () => {
-            try {
-                const downloadDoc = await getDoc(doc(db, 'downloads', 'pAd9UmdalQuAcEeuXQm4'));
-                if (downloadDoc.exists()) {
-                    setDownloadCount(downloadDoc.data().downloadCount);
-                } else {
-                    console.log('Document does not exist');
-                }
-            } catch (error) {
-                console.error('Error fetching download count: ', error);
-            } finally {
-                setLoading(false);
-            }
-        };
-
-        fetchDownloadCount();
-    }, []);
-
-
-    const handleDownload = async () => {
-        try {
-            await fetch('/api/incrementDownload', {
-                method: 'POST'
-            });
-
-            // Rafraîchir le compteur après l'incrémentation réussie
-            const downloadDoc = await getDoc(doc(db, 'downloads', 'pAd9UmdalQuAcEeuXQm4'));
-            if (downloadDoc.exists()) {
-                setDownloadCount(downloadDoc.data().downloadCount);
-            } else {
-                console.log('Document does not exist');
-            }
-        } catch (error) {
-            console.error('Error incrementing or fetching download count: ', error);
-        }
-    };
 
     return (
         <Layout>
@@ -131,59 +87,6 @@ const Page = () => {
                         </Button>
                     </Box>
                 </Section>
-
-
-                <Section delay={0.1}>
-                    <Flex align="center">
-                        <Heading as="h3" variant="section-title" mr={4}>
-                            Android
-                        </Heading>
-                        <Icon as={FaAndroid} boxSize={8} color="green.500" />
-                    </Flex>
-                    <Paragraph>
-                        Téléchargez notre application Android en un clic ! Acceptez les applications de{" "}
-                        <Link as={NextLink} href="" passHref>
-                            sources inconnues
-                        </Link>{" "}
-                        dans les paramètres de votre appareil pour commencer. Déjà{" "}
-                        <Link as={NextLink} href="" passHref>
-                            {700 + downloadCount}
-                        </Link>{" "}
-                        téléchargements et ça ne fait que commencer !
-                    </Paragraph>
-
-                    <Box align="center" my={4}>
-                        <Button
-                            as="a"
-                            href="/android/Centi Crescendo.apk"
-                            scroll={false}
-                            rightIcon={<ChevronRightIcon />}
-                            colorScheme="teal"
-                            download
-                            onClick={handleDownload}
-                        >
-                            Télécharger
-                        </Button>
-                    </Box>
-                </Section>
-                {/* <Section delay={0.2}>
-                    <Flex align="center" mb={4}>
-                        <Heading as="h3" variant="section-title" mr={4}>
-                            IOS
-                        </Heading>
-                        <Icon as={FaApple} boxSize={8} color="black" />
-                    </Flex>
-                    <Paragraph>
-                        La version iOS de notre application est en cours de {" "}
-                        <Link
-                            as={NextLink}
-                            href=""
-                            passHref
-                        >
-                            développement.
-                        </Link>{" "} Notre équipe technique travaille activement à sa sortie.
-                    </Paragraph>
-                </Section> */}
 
                 <Section delay={0.2}>
                     <Heading as="h3" variant="section-title" mr={4}>
